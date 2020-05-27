@@ -1,0 +1,1 @@
+ffmpeg -re -i [streaming source] -c:v copy -c:a aac -strict -2 -flags +global_header -bsf:a aac_adtstoasc -bufsize 2500k -f flv [rtmp]
